@@ -71,6 +71,9 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+
 # Graphics
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 2
 TARGET_USES_HWC2 := true
