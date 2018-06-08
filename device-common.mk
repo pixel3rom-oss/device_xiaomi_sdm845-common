@@ -18,6 +18,9 @@
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Properties
+TARGET_SYSTEM_PROP += $(LOCAL_PATH)/system.prop
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
