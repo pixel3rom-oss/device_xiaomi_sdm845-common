@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
