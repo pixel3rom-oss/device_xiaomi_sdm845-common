@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ims-ext-common
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.xiaomi_sdm845
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
