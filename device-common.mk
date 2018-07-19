@@ -29,6 +29,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default
 
+# Common init scripts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.qcom.rc:system/etc/init/init.qcom.rc
+
 # Display
 PRODUCT_PACKAGES += \
     libvulkan
@@ -49,6 +53,10 @@ PRODUCT_PACKAGES += \
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
+
+# Power
+PRODUCT_PACKAGES += \
+    power.qcom
 
 # QTI
 PRODUCT_COPY_FILES += \
