@@ -19,6 +19,9 @@ debug.sf.enable_hwc_vds=1
 sdm.debug.disable_inline_rotator=1
 sdm.debug.disable_inline_rotator_secure=1
 
+# Media
+audio.offload.video=true
+
 # Netflix custom property
 ro.netflix.bsp_rev=Q845-05000-1
 
