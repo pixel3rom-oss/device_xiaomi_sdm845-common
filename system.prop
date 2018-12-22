@@ -33,6 +33,9 @@ sdm.debug.disable_inline_rotator_secure=1
 audio.offload.video=true
 media.settings.xml=/system/etc/media_profiles_vendor.xml
 
+# Memory optimizations
+ro.vendor.qti.sys.fw.bservice_enable=true
+
 # Netflix custom property
 ro.netflix.bsp_rev=Q845-05000-1
 
