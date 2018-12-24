@@ -39,7 +39,8 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    libvulkan
+    libvulkan \
+    vendor.display.config@1.0
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -112,3 +113,16 @@ PRODUCT_PACKAGES += \
 # VNDK-SP
 PRODUCT_PACKAGES += \
     vndk-sp
+
+# WiFi Display
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
+PRODUCT_PACKAGES += \
+    libdisplayconfig \
+    libnl \
+    vendor.display.config@1.3 \
+    vendor.display.config@1.4 \
+    vendor.display.config@1.5 \
+    vendor.display.config@1.6 \
+    vendor.display.config@1.7
