@@ -20,6 +20,9 @@ ifneq ($(filter beryllium dipper equuleus perseus polaris ursa,$(TARGET_DEVICE))
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
+display_subdir_makefiles=$(call first-makefiles-under,hardware/qcom/display-caf/sdm845)
+$(foreach mk,$(display_subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
+
 include $(CLEAR_VARS)
 
 # A/B builds require us to create the mount points at compile time.
