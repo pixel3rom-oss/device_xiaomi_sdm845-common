@@ -51,6 +51,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbt-vendor \
+    libbthost_if
+
 # Common init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.qcom.rc:system/etc/init/init.qcom.rc
